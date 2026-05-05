@@ -1,0 +1,659 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:white;
+    background-image:url(img/backgrund-img/noFilter.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    }
+  
+.body-guns{
+  margin:0;
+  font-family:Arial, sans-serif;
+  color:white;
+  background-image:url(img/backgrund-img/maxresdefault.jpg);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  }
+
+  .body-islands{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:white;
+    background-image:url(img/backgrund-img/45c9930135db62c16d681eeaa459a200.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    }
+
+.body-fruit{
+  margin:0;
+  font-family:Arial, sans-serif;
+  color:white;
+  background-image:url(img/backgrund-img/blox-fruits-action-packed-scene-s8u3885kjbvba2pm.jpg);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  }
+
+    .body-fs{
+      margin:0;
+      font-family:Arial, sans-serif;
+      color:white;
+      background-image:url(img/backgrund-img/Blox-Fruits-Fighting-Styles-TIer-List-cover-1.webp);
+      background-size:cover;
+      background-position:center;
+      background-attachment:fixed;
+      }
+  .body-sword{
+    margin:0;
+    font-family:Arial, sans-serif;
+    color:white;
+    background-image:url(img/backgrund-img/34c233ac7d80f4d63abb69936a86debf.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    }
+    
+    .content{
+    background:rgba(0,0,0,0.7);
+    padding:40px;
+    max-width:1000px;
+    margin:auto;
+    }
+    
+    
+    
+    h1{
+    text-align:center;
+    font-size:50px;
+    }
+    
+    
+    
+    .menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+    gap:20px;
+    margin-top:40px;
+    margin-bottom:40px;
+    }
+    
+    
+    .menu a{
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    transition:0.3s;
+    }
+    
+    
+    .menu img{
+    width:100%;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    }
+    
+    
+    .menu a:hover{
+    transform:scale(1.1);
+    }
+    
+    
+        
+        
+        
+    .logo{ 
+    width:150px;
+    height:90px;
+    position:relative;
+    left:100px;
+    top:-100px;
+    object-fit:cover;
+    }
+
+
+
+
+
+
+
+
+
+
+    /* Media query för mobilskärm */
+@media (max-width: 1100px) {
+  
+  /* Dölj titeln */
+  h1 {
+    display: none;
+  }
+
+  /* Centrera och förstora loggan */
+  .logo {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 200px;   /* förstorar loggan */
+    height: auto;   /* behåller proportionerna */
+    margin: 20px 0; /* lite mellanrum ovan och under */
+  }
+
+  /* Justera content padding för mindre skärm */
+  .content {
+    padding: 20px;
+  }
+}
+
+  
+    
+
+
+
+
+
+
+/* Fightingstyle */
+
+/* ===== TITLE ===== */
+.bf-title {
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  margin: 20px 0 10px;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.bf-table-container {
+  width: 85%;
+  margin: 30px auto;
+  border: 2px solid #555;
+  border-radius: 12px;
+  background: #2a2c31;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ===== TABLE ===== */
+.bf-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.bf-header-row {
+  background: #1e1f23;
+}
+
+.bf-th {
+  padding: 12px;
+  border: 1px solid #444;
+  color: white;
+  font-weight: bold;
+}
+
+/* ===== CELLS ===== */
+.bf-td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+  color: white;
+}
+
+/* ===== ROW HOVER ===== */
+.bf-row:hover {
+  background: #3a3d42;
+}
+
+/* ===== SECTIONS ===== */
+.bf-section {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* First Sea */
+.first-sea td {
+  background: #1f3d1f;
+  color: #90ee90;
+}
+
+/* Second Sea */
+.second-sea td {
+  background: #1f2f3d;
+  color: #04d4f0;
+}
+
+/* Third Sea */
+.third-sea td {
+  background: #3d1f1f;
+  color: #ff7f7f;
+}
+
+/* ===== IMAGE ===== */
+.bf-style-img {
+  width: 70px;
+  border-radius: 6px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ===== HOVER BOX ===== */
+.bf-hover-box {
+  position: relative; /* Behövs för att bf-hover-info ska positioneras korrekt */
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ===== IMAGE HOVER EFFECT ===== */
+.bf-hover-box:hover .bf-style-img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgb(37, 106, 122));
+}
+
+/* ===== HOVER INFO (tooltip-style text) ===== */
+.bf-hover-info {
+  position: absolute;
+  bottom: 0; /* Start längst ner */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: #1e1f23;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  
+  opacity: 0;             /* Start gömd */
+  pointer-events: none;    /* Klick går igenom */
+  white-space: nowrap;
+  
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover: visa texten och flytta upp */
+.bf-hover-box:hover .bf-hover-info {
+  opacity: 1;
+  bottom: -6px; /* Flytta upp texten när man hovrar */
+}
+
+/* PRICE bold */
+.bf-hover-info b {
+  color: #4caf50;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA FS */
+/* ===== MOBILE / TABLET ===== */
+@media (max-width: 768px) {
+
+  .bf-table-container {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .bf-title {
+    font-size: 20px;
+  }
+
+  .bf-th, 
+  .bf-td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .bf-style-img {
+    width: 50px;
+  }
+
+  /* Gör tabellen scrollbar istället för att spricka */
+  .bf-table-container {
+    overflow-x: auto;
+  }
+
+  /* Mindre hover-box text */
+  .bf-hover-info {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+}
+
+
+/* ===== EXTRA SMALL PHONES ===== */
+@media (max-width: 480px) {
+
+  .bf-title {
+    font-size: 16px;
+  }
+
+  .bf-th, 
+  .bf-td {
+    font-size: 10px;
+    padding: 6px;
+  }
+
+  .bf-style-img {
+    width: 40px;
+  }
+
+  .bf-hover-info {
+    font-size: 9px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Blox Fruits Menu */
+/* ===== GRID ===== */
+.bf-fruits-menu {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  margin-bottom: 40px;
+}
+
+/* ===== IMAGE ===== */
+.bf-fruit-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+  display: block;
+}
+
+/* ===== BOX ===== */
+.bf-hover-box {
+  position: relative;
+  text-align: center;
+}
+
+/* ===== INFO ===== */
+.bf-hover-info {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #1e1f23;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+/* SHOW INFO */
+.bf-hover-box:hover .bf-hover-info {
+  opacity: 1;
+}
+
+/* ===== HOVER SCALE ===== */
+.bf-hover-box:hover .bf-fruit-img {
+  transform: scale(1.15);
+}
+
+/* ===== RARITY COLORS ===== */
+
+/* COMMON */
+.common:hover .bf-fruit-img {
+  filter: drop-shadow(0 0 10px #9e9e9e);
+}
+
+/* UNCOMMON */
+.uncommon:hover .bf-fruit-img {
+  filter: drop-shadow(0 0 10px #4caf50);
+}
+
+/* RARE */
+.rare:hover .bf-fruit-img {
+  filter: drop-shadow(0 0 10px #2196f3);
+}
+
+/* LEGENDARY */
+.legendary:hover .bf-fruit-img {
+  filter: drop-shadow(0 0 10px #9c27b0);
+}
+
+/* MYTHICAL */
+.mythical:hover .bf-fruit-img {
+  filter: drop-shadow(0 0 12px #ff3c10);
+}
+
+
+
+/* ===== MOBILE: 2 per row ===== */
+@media (max-width: 768px) {
+
+  .bf-fruits-menu {
+    grid-template-columns: repeat(2, 1fr); /* 2 bilder per rad */
+    gap: 15px;
+  }
+
+  .bf-fruit-img {
+    width: 100%;   /* fyller hela rutan */
+    height: auto;  /* behåller proportion */
+  }
+
+  .bf-hover-info {
+    font-size: 10px;
+    white-space: normal; /* så text inte går utanför */
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ISLAND */
+
+./* ===== TABLE CONTAINER ===== */
+.bf-table-container {
+  width: 85%;
+  margin: 30px auto;
+  border: 2px solid #555;
+  border-radius: 12px;
+  background: #2a2c31;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* ===== TABLE ===== */
+.bf-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: white;
+}
+
+/* ===== HEADER ===== */
+.bf-header-row {
+  background: #1e1f23;
+}
+
+.bf-th {
+  padding: 12px;
+  border: 1px solid #444;
+  color: white;
+  font-weight: bold;
+}
+
+/* ===== CELLS ===== */
+.bf-td {
+  padding: 12px;
+  border: 1px solid #444;
+  text-align: center;
+}
+
+/* ===== ROW HOVER ===== */
+.bf-row:hover {
+  background: #3a3d42;
+}
+
+/* ===== SECTIONS (SEAS) ===== */
+.bf-section {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* First Sea */
+.first-sea td {
+  background: #1f3d1f;
+  color: #90ee90;
+}
+
+/* Second Sea */
+.second-sea td {
+  background: #1f2f3d;
+  color: #04d4f0;
+}
+
+/* Third Sea */
+.third-sea td {
+  background: #3d1f1f;
+  color: #ff7f7f;
+}
+
+/* ===== IMAGE ===== */
+.bf-style-img {
+  width: 70px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* ===== HOVER BOX ===== */
+.bf-hover-box {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* IMAGE HOVER EFFECT */
+.bf-hover-box:hover .bf-style-img {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px rgb(37, 106, 122));
+}
+
+/* ===== HOVER INFO (BOSSES) ===== */
+.bf-hover-info {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: #1e1f23;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  
+  font-size: 12px;
+  color: white;
+  text-align: center;
+
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+/* SHOW ON HOVER */
+.bf-hover-box:hover .bf-hover-info {
+  opacity: 1;
+  bottom: -50px;
+}
+
+/* ===== TEXT UNDER IMAGE ===== */
+.bf-td p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+/* ===== BOSS TEXT COLOR ===== */
+.bf-hover-info p {
+  margin: 2px 0;
+}
+
+.bf-hover-info b {
+  color: #ff5555;
+}
+
+@media (max-width: 768px) {
+  video {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.bf-hover-box {
+  position: relative;
+}
+
+.bf-hover-info {
+  position: absolute;
+  z-index: 2; /* högre = framför */
+}
+
+/* .bf-fruit-img {
+  position: relative;
+  z-index: 1; bakom */
+/* } */
+
+
